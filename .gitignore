@@ -1,0 +1,23 @@
+# R data files
+*.rds
+*.RData
+*.Rdata
+
+# Large data files
+*.h5
+*.cloupe
+*.pdf
+*.pptx
+
+# OS files
+.DS_Store
+.Rhistory
+
+# Large output directories
+yellow-aggr_outs/
+green-aggr_outs/
+UMAP_outputs/
+
+# Large CSV files (if needed)
+# Results_LFC_Pval_DESeq2.csv
+
