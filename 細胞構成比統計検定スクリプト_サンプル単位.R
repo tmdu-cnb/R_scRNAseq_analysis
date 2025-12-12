@@ -299,8 +299,34 @@ statistical_results$p_adj_fdr_mw <- p.adjust(statistical_results$mw_test_p, meth
 # Log2(FC)を計算
 statistical_results$Log2FC <- log2(statistical_results$DTA_mean / statistical_results$CTL_mean)
 
+# Cohen's dを計算（効果量）
+# Cohen's d = (mean1 - mean2) / pooled_sd
+# pooled_sd = sqrt(((n1-1)*sd1^2 + (n2-1)*sd2^2) / (n1+n2-2))
+n_dta <- 3
+n_ctl <- 3
+statistical_results$Cohens_d <- (statistical_results$DTA_mean - statistical_results$CTL_mean) / 
+  sqrt(((n_dta - 1) * statistical_results$DTA_sd^2 + (n_ctl - 1) * statistical_results$CTL_sd^2) / (n_dta + n_ctl - 2))
+
+# 効果量の大きさを分類
+statistical_results$EffectSize <- ifelse(
+  abs(statistical_results$Cohens_d) < 0.2, "negligible",
+  ifelse(
+    abs(statistical_results$Cohens_d) < 0.5, "small",
+    ifelse(
+      abs(statistical_results$Cohens_d) < 0.8, "medium",
+      "large"
+    )
+  )
+)
+
 cat("統計検定結果:\n\n")
 print(statistical_results, row.names = FALSE)
+
+cat("\n【Cohen's d効果量の解釈】\n")
+cat("|d| < 0.2: negligible (実質的に差がない)\n")
+cat("0.2 ≤ |d| < 0.5: small (小さな差)\n")
+cat("0.5 ≤ |d| < 0.8: medium (中程度の差)\n")
+cat("|d| ≥ 0.8: large (大きな差)\n\n")
 
 cat("\n")
 
@@ -482,9 +508,195 @@ ggsave(
 
 cat("  ✓ ボルケーノプロットを保存しました\n")
 
+# 3. Log2(FC)の棒グラフ
+cat("3. Log2(FC)棒グラフを作成中...\n")
+
+plot_data_bar <- statistical_results |>
+  mutate(
+    CellType = factor(CellType, levels = celltype_order),
+    Significant = ifelse(p_adj_fdr_mw < 0.05, "Yes", "No"),
+    fill_color = ifelse(Log2FC > 0, "#E31A1C", "#1F78B4")
+  )
+
+p_bar_log2fc <- ggplot(plot_data_bar, aes(x = CellType, y = Log2FC, fill = fill_color)) +
+  geom_bar(stat = "identity", width = 0.7, alpha = 0.8) +
+  geom_hline(yintercept = 0, linetype = "solid", color = "black", linewidth = 1) +
+  scale_fill_identity() +
+  scale_x_discrete(guide = guide_axis(angle = 45)) +
+  labs(
+    x = "Cell Type",
+    y = "Log2(FC) (DTA / CTL)",
+    title = "Log2(FC) by Cell Type (n=3 vs n=3)"
+  ) +
+  theme_classic() +
+  theme(
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 16, face = "bold"),
+    axis.text = element_text(size = 12, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.border = element_rect(color = "black", fill = NA, linewidth = 1.5),
+    axis.line = element_blank(),
+    plot.margin = margin(10, 10, 10, 10)
+  )
+
+ggsave(
+  filename = file.path(output_dir, "統計検定_サンプル単位_Log2FC棒グラフ.png"),
+  plot = p_bar_log2fc,
+  width = 12,
+  height = 8,
+  dpi = 300,
+  bg = "white"
+)
+
+cat("  ✓ Log2(FC)棒グラフを保存しました\n")
+
+# 4. 構成比の棒グラフ（DTA vs CTL）
+cat("4. 構成比比較棒グラフを作成中...\n")
+
+plot_data_prop_bar <- statistical_results |>
+  select(CellType, DTA_mean, CTL_mean) |>
+  pivot_longer(cols = c(DTA_mean, CTL_mean), names_to = "Group", values_to = "Proportion") |>
+  mutate(
+    CellType = factor(CellType, levels = celltype_order),
+    Group = factor(ifelse(Group == "DTA_mean", "DTA", "CTL"), levels = c("DTA", "CTL"))
+  )
+
+p_bar_prop <- ggplot(plot_data_prop_bar, aes(x = CellType, y = Proportion, fill = Group)) +
+  geom_bar(stat = "identity", position = "dodge", width = 0.7, alpha = 0.8) +
+  scale_fill_manual(values = c("DTA" = "#E31A1C", "CTL" = "#1F78B4")) +
+  scale_y_continuous(labels = scales::percent_format()) +
+  scale_x_discrete(guide = guide_axis(angle = 45)) +
+  labs(
+    x = "Cell Type",
+    y = "Proportion",
+    title = "Cell Type Proportions: DTA vs CTL (n=3 per group)",
+    fill = "Group"
+  ) +
+  theme_classic() +
+  theme(
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 16, face = "bold"),
+    axis.text = element_text(size = 12, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 14, face = "bold"),
+    panel.border = element_rect(color = "black", fill = NA, linewidth = 1.5),
+    axis.line = element_blank(),
+    plot.margin = margin(10, 10, 10, 10)
+  )
+
+ggsave(
+  filename = file.path(output_dir, "統計検定_サンプル単位_構成比棒グラフ.png"),
+  plot = p_bar_prop,
+  width = 12,
+  height = 8,
+  dpi = 300,
+  bg = "white"
+)
+
+cat("  ✓ 構成比比較棒グラフを保存しました\n")
+
+# 5. Cohen's dの棒グラフ
+cat("5. Cohen's d棒グラフを作成中...\n")
+
+plot_data_cohensd <- statistical_results |>
+  mutate(
+    CellType = factor(CellType, levels = celltype_order),
+    fill_color = ifelse(Cohens_d > 0, "#E31A1C", "#1F78B4"),
+    EffectSize_label = paste0(EffectSize, " (|d|=", sprintf("%.2f", abs(Cohens_d)), ")")
+  )
+
+p_bar_cohensd <- ggplot(plot_data_cohensd, aes(x = CellType, y = Cohens_d, fill = fill_color)) +
+  geom_bar(stat = "identity", width = 0.7, alpha = 0.8) +
+  geom_hline(yintercept = 0, linetype = "solid", color = "black", linewidth = 1) +
+  # 効果量の基準線を追加
+  geom_hline(yintercept = c(-0.2, 0.2), linetype = "dashed", color = "gray50", linewidth = 0.5, alpha = 0.5) +
+  geom_hline(yintercept = c(-0.5, 0.5), linetype = "dashed", color = "gray50", linewidth = 0.5, alpha = 0.5) +
+  geom_hline(yintercept = c(-0.8, 0.8), linetype = "dashed", color = "gray50", linewidth = 0.5, alpha = 0.5) +
+  scale_fill_identity() +
+  scale_x_discrete(guide = guide_axis(angle = 45)) +
+  labs(
+    x = "Cell Type",
+    y = "Cohen's d (Effect Size)",
+    title = "Cohen's d Effect Size by Cell Type (n=3 vs n=3)",
+    subtitle = "Reference lines: |d| = 0.2 (small), 0.5 (medium), 0.8 (large)"
+  ) +
+  theme_classic() +
+  theme(
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
+    plot.subtitle = element_text(size = 12, hjust = 0.5),
+    axis.title = element_text(size = 16, face = "bold"),
+    axis.text = element_text(size = 12, face = "bold"),
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.border = element_rect(color = "black", fill = NA, linewidth = 1.5),
+    axis.line = element_blank(),
+    plot.margin = margin(10, 10, 10, 10)
+  )
+
+ggsave(
+  filename = file.path(output_dir, "統計検定_サンプル単位_Cohens_d棒グラフ.png"),
+  plot = p_bar_cohensd,
+  width = 12,
+  height = 8,
+  dpi = 300,
+  bg = "white"
+)
+
+cat("  ✓ Cohen's d棒グラフを保存しました\n")
+
+# 6. Cohen's dとLog2(FC)の比較プロット
+cat("6. Cohen's d vs Log2(FC)比較プロットを作成中...\n")
+
+plot_data_comparison <- statistical_results |>
+  mutate(
+    CellType = factor(CellType, levels = celltype_order),
+    EffectSize = factor(EffectSize, levels = c("negligible", "small", "medium", "large"))
+  )
+
+p_comparison <- ggplot(plot_data_comparison, aes(x = Log2FC, y = Cohens_d, color = EffectSize)) +
+  geom_point(size = 5, alpha = 0.7) +
+  geom_text_repel(aes(label = CellType), size = 4, fontface = "bold", box.padding = 0.5) +
+  geom_hline(yintercept = 0, linetype = "dashed", color = "black", linewidth = 0.5) +
+  geom_vline(xintercept = 0, linetype = "dashed", color = "black", linewidth = 0.5) +
+  scale_color_manual(
+    values = c("negligible" = "gray70", "small" = "yellow", "medium" = "orange", "large" = "red"),
+    name = "Effect Size"
+  ) +
+  labs(
+    x = "Log2(FC) (DTA / CTL)",
+    y = "Cohen's d",
+    title = "Effect Size (Cohen's d) vs Log2(FC)"
+  ) +
+  theme_classic() +
+  theme(
+    plot.title = element_text(size = 18, face = "bold", hjust = 0.5),
+    axis.title = element_text(size = 16, face = "bold"),
+    axis.text = element_text(size = 14, face = "bold"),
+    legend.text = element_text(size = 12),
+    legend.title = element_text(size = 14, face = "bold"),
+    panel.border = element_rect(color = "black", fill = NA, linewidth = 1.5),
+    axis.line = element_blank(),
+    plot.margin = margin(10, 10, 10, 10)
+  )
+
+ggsave(
+  filename = file.path(output_dir, "統計検定_サンプル単位_Cohens_d_vs_Log2FC.png"),
+  plot = p_comparison,
+  width = 10,
+  height = 8,
+  dpi = 300,
+  bg = "white"
+)
+
+cat("  ✓ Cohen's d vs Log2(FC)比較プロットを保存しました\n")
+
 cat("\n✓ グラフを保存しました:\n")
 cat("  -", file.path(output_dir, "統計検定_サンプル単位構成比ドットプロット.png"), "\n")
 cat("  -", file.path(output_dir, "統計検定_サンプル単位ボルケーノプロット.png"), "\n")
+cat("  -", file.path(output_dir, "統計検定_サンプル単位_Log2FC棒グラフ.png"), "\n")
+cat("  -", file.path(output_dir, "統計検定_サンプル単位_構成比棒グラフ.png"), "\n")
+cat("  -", file.path(output_dir, "統計検定_サンプル単位_Cohens_d棒グラフ.png"), "\n")
+cat("  -", file.path(output_dir, "統計検定_サンプル単位_Cohens_d_vs_Log2FC.png"), "\n")
 
 cat("\n")
 cat(paste(rep("=", 80), collapse = ""), "\n")

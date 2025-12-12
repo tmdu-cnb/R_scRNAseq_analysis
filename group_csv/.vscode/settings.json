@@ -1,0 +1,7 @@
+{
+    "chatgpt.openOnStartup": false,
+    "workbench.colorTheme": "Quiet Light",
+    "editor.suggest.showColors": true,
+    "window.autoDetectColorScheme": false,
+    "search.decorations.colors": true
+}

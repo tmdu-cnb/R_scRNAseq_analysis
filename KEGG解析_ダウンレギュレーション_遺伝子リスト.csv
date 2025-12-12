@@ -1,0 +1,11 @@
+"Category","ID","Description","Gene_ENTREZID","Gene_Symbol","Count","p.adjust"
+"KEGG_Down","mmu04360","Axon guidance","14083; 22065; 14270; 231148","Ptk2; Trpc3; Srgap2; Ablim2",4,0.0649307747942151
+"KEGG_Down","mmu04070","Phosphatidylinositol signaling system","104418; 74596; 380921","Dgkz; Cds1; Dgkh",3,0.0649307747942151
+"KEGG_Down","mmu00564","Glycerophospholipid metabolism","104418; 74596; 380921","Dgkz; Cds1; Dgkh",3,0.0649307747942151
+"KEGG_Down","mmu04724","Glutamatergic synapse","14800; 14805; 243961","Gria2; Grik1; Shank1",3,0.0738290187651023
+"KEGG_Down","mmu05135","Yersinia infection","14083; 108100; 140580","Ptk2; Baiap2; Elmo1",3,0.0828272393476284
+"KEGG_Down","mmu05017","Spinocerebellar ataxia","14800; 53313; 22065","Gria2; Atp2a3; Trpc3",3,0.0828272393476284
+"KEGG_Down","mmu04517","IgSF CAM signaling","223435; 14083; 108100; 14270","Trio; Ptk2; Baiap2; Srgap2",4,0.0924748927704056
+"KEGG_Down","mmu04148","Efferocytosis","14083; 53313; 140580","Ptk2; Atp2a3; Elmo1",3,0.0924748927704056
+"KEGG_Down","mmu04730","Long-term depression","14800; 14804","Gria2; Grid2",2,0.0971717765613606
+"KEGG_Down","mmu00561","Glycerolipid metabolism","104418; 380921","Dgkz; Dgkh",2,0.0971717765613606

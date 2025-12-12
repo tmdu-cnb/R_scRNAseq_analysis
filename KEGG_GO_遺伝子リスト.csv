@@ -1,0 +1,41 @@
+"Category","ID","Description","Gene_ENTREZID","Gene_Symbol","Count","p.adjust"
+"GO_Down","GO:0060079","excitatory postsynaptic potential","Gria2; Grik1; Baiap2; Grid2; Shank1","Gria2; Grik1; Baiap2; Grid2; Shank1",5,0.00532673882763874
+"GO_Down","GO:0099565","chemical synaptic transmission, postsynaptic","Gria2; Grik1; Baiap2; Grid2; Shank1","Gria2; Grik1; Baiap2; Grid2; Shank1",5,0.00532673882763874
+"GO_Down","GO:0048167","regulation of synaptic plasticity","Syt7; Grik1; Cpeb1; Baiap2; Grid2; Pde9a; Grid2ip","Syt7; Grik1; Cpeb1; Baiap2; Grid2; Pde9a; Grid2ip",7,0.00577884931972504
+"GO_Down","GO:0051480","regulation of cytosolic calcium ion concentration","Asph; Trpc3; Tspoap1; Grid2ip","Asph; Trpc3; Tspoap1; Grid2ip",4,0.00577884931972504
+"GO_Down","GO:0060078","regulation of postsynaptic membrane potential","Gria2; Grik1; Baiap2; Grid2; Shank1","Gria2; Grik1; Baiap2; Grid2; Shank1",5,0.00577884931972504
+"GO_Down","GO:0060402","calcium ion transport into cytosol","Asph; Trpc3; Cacna1g","Asph; Trpc3; Cacna1g",3,0.00758972750798016
+"GO_Down","GO:0006874","intracellular calcium ion homeostasis","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip",6,0.0122823301828979
+"GO_Down","GO:0070588","calcium ion transmembrane transport","Asph; Atp2a3; Trpc3; Tspan13; Atp2c1; Cacna1g","Asph; Atp2a3; Trpc3; Tspan13; Atp2c1; Cacna1g",6,0.0124064647694712
+"GO_Down","GO:0010613","positive regulation of cardiac muscle hypertrophy","Ptk2; Trpc3; Pde9a","Ptk2; Trpc3; Pde9a",3,0.0124064647694712
+"GO_Down","GO:0055074","calcium ion homeostasis","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip",6,0.0124064647694712
+"GO_Up","GO:0099003","vesicle-mediated transport in synapse","Pfn2; Calm3; Ap2m1; Sncb; Atp6v1g1; Cltb","Pfn2; Calm3; Ap2m1; Sncb; Atp6v1g1; Cltb",6,0.000929804057850425
+"GO_Up","GO:0032272","negative regulation of protein polymerization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.000929804057850425
+"GO_Up","GO:0140238","presynaptic endocytosis","Calm3; Ap2m1; Sncb; Cltb","Calm3; Ap2m1; Sncb; Cltb",4,0.000929804057850425
+"GO_Up","GO:0099504","synaptic vesicle cycle","Pfn2; Ap2m1; Sncb; Atp6v1g1; Cltb","Pfn2; Ap2m1; Sncb; Atp6v1g1; Cltb",5,0.00205774499528782
+"GO_Up","GO:0031333","negative regulation of protein-containing complex assembly","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00575768067505858
+"GO_Up","GO:0051494","negative regulation of cytoskeleton organization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00575768067505858
+"GO_Up","GO:1902904","negative regulation of supramolecular fiber organization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00575768067505858
+"GO_Up","GO:0032271","regulation of protein polymerization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00913392018203748
+"GO_Up","GO:0048488","synaptic vesicle endocytosis","Ap2m1; Sncb; Cltb","Ap2m1; Sncb; Cltb",3,0.0104654114181945
+"GO_Up","GO:0031115","negative regulation of microtubule polymerization","Tubb4a; Stmn2","Tubb4a; Stmn2",2,0.0104654114181945
+"KEGG_Down","mmu04360","Axon guidance","14083; 22065; 14270; 231148","Ptk2; Trpc3; Srgap2; Ablim2",4,0.0649307747942151
+"KEGG_Down","mmu04070","Phosphatidylinositol signaling system","104418; 74596; 380921","Dgkz; Cds1; Dgkh",3,0.0649307747942151
+"KEGG_Down","mmu00564","Glycerophospholipid metabolism","104418; 74596; 380921","Dgkz; Cds1; Dgkh",3,0.0649307747942151
+"KEGG_Down","mmu04724","Glutamatergic synapse","14800; 14805; 243961","Gria2; Grik1; Shank1",3,0.0738290187651023
+"KEGG_Down","mmu05135","Yersinia infection","14083; 108100; 140580","Ptk2; Baiap2; Elmo1",3,0.0828272393476284
+"KEGG_Down","mmu05017","Spinocerebellar ataxia","14800; 53313; 22065","Gria2; Atp2a3; Trpc3",3,0.0828272393476284
+"KEGG_Down","mmu04517","IgSF CAM signaling","223435; 14083; 108100; 14270","Trio; Ptk2; Baiap2; Srgap2",4,0.0924748927704056
+"KEGG_Down","mmu04148","Efferocytosis","14083; 53313; 140580","Ptk2; Atp2a3; Elmo1",3,0.0924748927704056
+"KEGG_Down","mmu04730","Long-term depression","14800; 14804","Gria2; Grid2",2,0.0971717765613606
+"KEGG_Down","mmu00561","Glycerolipid metabolism","104418; 380921","Dgkz; Dgkh",2,0.0971717765613606
+"KEGG_Up","mmu05016","Huntington disease","12867; 11773; 73710; 74325; 22153","Cox7c; Ap2m1; Tubb2b; Cltb; Tubb4a",5,0.0119417867105989
+"KEGG_Up","mmu04721","Synaptic vesicle cycle","11773; 66290; 74325","Ap2m1; Atp6v1g1; Cltb",3,0.013304835281551
+"KEGG_Up","mmu05012","Parkinson disease","12867; 12315; 73710; 22153","Cox7c; Calm3; Tubb2b; Tubb4a",4,0.0262141563656434
+"KEGG_Up","mmu04114","Oocyte meiosis","12315; 22627; 19052","Calm3; Ywhae; Ppp2ca",3,0.0262141563656434
+"KEGG_Up","mmu04261","Adrenergic signaling in cardiomyocytes","12315; 22003; 19052","Calm3; Tpm1; Ppp2ca",3,0.0415331382164193
+"KEGG_Up","mmu05014","Amyotrophic lateral sclerosis","18645; 12867; 73710; 22153","Pfn2; Cox7c; Tubb2b; Tubb4a",4,0.0432898381613113
+"KEGG_Up","mmu04145","Phagosome","66290; 73710; 22153","Atp6v1g1; Tubb2b; Tubb4a",3,0.0432898381613113
+"KEGG_Up","mmu05010","Alzheimer disease","12867; 12315; 73710; 22153","Cox7c; Calm3; Tubb2b; Tubb4a",4,0.0432898381613113
+"KEGG_Up","mmu04814","Motor proteins","22003; 73710; 22153","Tpm1; Tubb2b; Tubb4a",3,0.0451570497858117
+"KEGG_Up","mmu04961","Endocrine and other factor-regulated calcium reabsorption","11773; 74325","Ap2m1; Cltb",2,0.0451570497858117

@@ -1,0 +1,11 @@
+"Category","ID","Description","Gene_ENTREZID","Gene_Symbol","Count","p.adjust"
+"GO_Down","GO:0060079","excitatory postsynaptic potential","Gria2; Grik1; Baiap2; Grid2; Shank1","Gria2; Grik1; Baiap2; Grid2; Shank1",5,0.00532673882763874
+"GO_Down","GO:0099565","chemical synaptic transmission, postsynaptic","Gria2; Grik1; Baiap2; Grid2; Shank1","Gria2; Grik1; Baiap2; Grid2; Shank1",5,0.00532673882763874
+"GO_Down","GO:0048167","regulation of synaptic plasticity","Syt7; Grik1; Cpeb1; Baiap2; Grid2; Pde9a; Grid2ip","Syt7; Grik1; Cpeb1; Baiap2; Grid2; Pde9a; Grid2ip",7,0.00577884931972504
+"GO_Down","GO:0051480","regulation of cytosolic calcium ion concentration","Asph; Trpc3; Tspoap1; Grid2ip","Asph; Trpc3; Tspoap1; Grid2ip",4,0.00577884931972504
+"GO_Down","GO:0060078","regulation of postsynaptic membrane potential","Gria2; Grik1; Baiap2; Grid2; Shank1","Gria2; Grik1; Baiap2; Grid2; Shank1",5,0.00577884931972504
+"GO_Down","GO:0060402","calcium ion transport into cytosol","Asph; Trpc3; Cacna1g","Asph; Trpc3; Cacna1g",3,0.00758972750798016
+"GO_Down","GO:0006874","intracellular calcium ion homeostasis","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip",6,0.0122823301828979
+"GO_Down","GO:0070588","calcium ion transmembrane transport","Asph; Atp2a3; Trpc3; Tspan13; Atp2c1; Cacna1g","Asph; Atp2a3; Trpc3; Tspan13; Atp2c1; Cacna1g",6,0.0124064647694712
+"GO_Down","GO:0010613","positive regulation of cardiac muscle hypertrophy","Ptk2; Trpc3; Pde9a","Ptk2; Trpc3; Pde9a",3,0.0124064647694712
+"GO_Down","GO:0055074","calcium ion homeostasis","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip","Asph; Atp2a3; Trpc3; Atp2c1; Tspoap1; Grid2ip",6,0.0124064647694712
