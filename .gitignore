@@ -18,6 +18,13 @@ yellow-aggr_outs/
 green-aggr_outs/
 UMAP_outputs/
 
-# Large CSV files (if needed)
-# Results_LFC_Pval_DESeq2.csv
+# Large CSV files
+group_csv_green/IOT_CF_counts.csv
+group_csv_green/IOC_CF_counts.csv
+
+# Large GTF files
+*.gtf
+group_csv/annotation.gtf
+group_csv/Mus_musculus.GRCm39.114.chr.gtf
+group_csv/Mus_musculus.GRCm39.114.abinitio.gtf
 
