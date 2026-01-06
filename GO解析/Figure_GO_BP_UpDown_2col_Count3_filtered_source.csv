@@ -1,0 +1,25 @@
+Direction,ID,Description,GeneRatio,GeneRatio_num,Count,p.adjust,qvalue,geneID
+Down,GO:0060079,excitatory postsynaptic potential,5/61,0.08196721311475409,5,0.005326738827638742,0.004256175161178178,Gria2/Grik1/Baiap2/Grid2/Shank1
+Down,GO:0099565,"chemical synaptic transmission, postsynaptic",5/61,0.08196721311475409,5,0.005326738827638742,0.004256175161178178,Gria2/Grik1/Baiap2/Grid2/Shank1
+Down,GO:0048167,regulation of synaptic plasticity,7/61,0.11475409836065574,7,0.0057788493197250355,0.004617420851794986,Syt7/Grik1/Cpeb1/Baiap2/Grid2/Pde9a/Grid2ip
+Down,GO:0051480,regulation of cytosolic calcium ion concentration,4/61,0.06557377049180328,4,0.0057788493197250355,0.004617420851794986,Asph/Trpc3/Tspoap1/Grid2ip
+Down,GO:0060078,regulation of postsynaptic membrane potential,5/61,0.08196721311475409,5,0.0057788493197250355,0.004617420851794986,Gria2/Grik1/Baiap2/Grid2/Shank1
+Down,GO:0060402,calcium ion transport into cytosol,3/61,0.04918032786885246,3,0.007589727507980163,0.00606435020466273,Asph/Trpc3/Cacna1g
+Down,GO:0006874,intracellular calcium ion homeostasis,6/61,0.09836065573770492,6,0.012282330182897903,0.00981383738481732,Asph/Atp2a3/Trpc3/Atp2c1/Tspoap1/Grid2ip
+Down,GO:0070588,calcium ion transmembrane transport,6/61,0.09836065573770492,6,0.012406464769471158,0.009913023502461165,Asph/Atp2a3/Trpc3/Tspan13/Atp2c1/Cacna1g
+Down,GO:0010613,positive regulation of cardiac muscle hypertrophy,3/61,0.04918032786885246,3,0.012406464769471158,0.009913023502461165,Ptk2/Trpc3/Pde9a
+Down,GO:0055074,calcium ion homeostasis,6/61,0.09836065573770492,6,0.012406464769471158,0.009913023502461165,Asph/Atp2a3/Trpc3/Atp2c1/Tspoap1/Grid2ip
+Down,GO:0014742,positive regulation of muscle hypertrophy,3/61,0.04918032786885246,3,0.012406464769471158,0.009913023502461165,Ptk2/Trpc3/Pde9a
+Up,GO:0099003,vesicle-mediated transport in synapse,6/32,0.1875,6,9.298040578504246e-4,6.265297785551943e-4,Pfn2/Calm3/Ap2m1/Sncb/Atp6v1g1/Cltb
+Up,GO:0032272,negative regulation of protein polymerization,4/32,0.125,4,9.298040578504246e-4,6.265297785551943e-4,Pfn2/Tpm1/Tubb4a/Stmn2
+Up,GO:0140238,presynaptic endocytosis,4/32,0.125,4,9.298040578504246e-4,6.265297785551943e-4,Calm3/Ap2m1/Sncb/Cltb
+Up,GO:0099504,synaptic vesicle cycle,5/32,0.15625,5,0.0020577449952878194,0.0013865701115579917,Pfn2/Ap2m1/Sncb/Atp6v1g1/Cltb
+Up,GO:0031333,negative regulation of protein-containing complex assembly,4/32,0.125,4,0.005757680675058584,0.003879697413534286,Pfn2/Tpm1/Tubb4a/Stmn2
+Up,GO:0051494,negative regulation of cytoskeleton organization,4/32,0.125,4,0.005757680675058584,0.003879697413534286,Pfn2/Tpm1/Tubb4a/Stmn2
+Up,GO:1902904,negative regulation of supramolecular fiber organization,4/32,0.125,4,0.005757680675058584,0.003879697413534286,Pfn2/Tpm1/Tubb4a/Stmn2
+Up,GO:0032271,regulation of protein polymerization,4/32,0.125,4,0.009133920182037476,0.0061547085546418984,Pfn2/Tpm1/Tubb4a/Stmn2
+Up,GO:0048488,synaptic vesicle endocytosis,3/32,0.09375,3,0.01046541141819452,0.007051907165783959,Ap2m1/Sncb/Cltb
+Up,GO:0010976,positive regulation of neuron projection development,4/32,0.125,4,0.01046541141819452,0.007051907165783959,Ptn/Tubb2b/Marcks/Stmn2
+Up,GO:0043254,regulation of protein-containing complex assembly,5/32,0.15625,5,0.01046541141819452,0.007051907165783959,Pfn2/Tpm1/Tubb4a/Stmn2/Ppp2ca
+Up,GO:0031346,positive regulation of cell projection organization,5/32,0.15625,5,0.01046541141819452,0.007051907165783959,Ptn/Tubb2b/Marcks/Stmn2/Islr2
+Up,GO:0036465,synaptic vesicle recycling,3/32,0.09375,3,0.011446428128505,0.007712945561003186,Ap2m1/Sncb/Cltb

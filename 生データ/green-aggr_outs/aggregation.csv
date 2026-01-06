@@ -1,0 +1,5 @@
+sample_id,molecule_h5
+7931-DTA_IO_control_1,/data_s1/runs/24JU082/7931-DTA_IO_control_1_sample_molecule_info.h5
+7932-DTA_IO_control_2,/data_s1/runs/24JU082/7932-DTA_IO_control_2_sample_molecule_info.h5
+7933-DTA_IO_dta_1,/data_s1/runs/24JU082/7933-DTA_IO_dta_1_sample_molecule_info.h5
+7934-DTA_IO_dta_2,/data_s1/runs/24JU082/7934-DTA_IO_dta_2_sample_molecule_info.h5

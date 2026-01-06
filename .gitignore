@@ -1,0 +1,40 @@
+# Mac system files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# R data files (重たいデータ)
+*.rds
+*.RData
+*.Rdata
+
+# HDF5 files (重たいデータ)
+*.h5
+*.h5ad
+
+# 10x Genomics files (重たいデータ)
+*.cloupe
+*.cloupe.json
+
+# Compressed data files (重たいデータ)
+*.gz
+*.bz2
+*.zip
+
+# 生データフォルダ内の大きなファイル
+生データ/**/*.rds
+生データ/**/*.h5
+生データ/**/*.cloupe
+生データ/**/*.gz
+生データ/**/filtered_feature_bc_matrix/
+生データ/**/web_summary.html
+
+# 一時ファイル
+*.tmp
+*.temp
+*~
+.Rhistory
+.Rapp.history
+

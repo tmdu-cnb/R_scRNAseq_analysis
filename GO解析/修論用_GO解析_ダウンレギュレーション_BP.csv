@@ -1,0 +1,45 @@
+"ID","Description","GeneRatio","adjPval","geneID","Count"
+"GO:0060079","excitatory postsynaptic potential","5/61",0.00532673882763874,"Gria2/Grik1/Baiap2/Grid2/Shank1",5
+"GO:0099565","chemical synaptic transmission, postsynaptic","5/61",0.00532673882763874,"Gria2/Grik1/Baiap2/Grid2/Shank1",5
+"GO:0048167","regulation of synaptic plasticity","7/61",0.00577884931972504,"Syt7/Grik1/Cpeb1/Baiap2/Grid2/Pde9a/Grid2ip",7
+"GO:0051480","regulation of cytosolic calcium ion concentration","4/61",0.00577884931972504,"Asph/Trpc3/Tspoap1/Grid2ip",4
+"GO:0060078","regulation of postsynaptic membrane potential","5/61",0.00577884931972504,"Gria2/Grik1/Baiap2/Grid2/Shank1",5
+"GO:0060402","calcium ion transport into cytosol","3/61",0.00758972750798016,"Asph/Trpc3/Cacna1g",3
+"GO:0006874","intracellular calcium ion homeostasis","6/61",0.0122823301828979,"Asph/Atp2a3/Trpc3/Atp2c1/Tspoap1/Grid2ip",6
+"GO:0070588","calcium ion transmembrane transport","6/61",0.0124064647694712,"Asph/Atp2a3/Trpc3/Tspan13/Atp2c1/Cacna1g",6
+"GO:0010613","positive regulation of cardiac muscle hypertrophy","3/61",0.0124064647694712,"Ptk2/Trpc3/Pde9a",3
+"GO:0055074","calcium ion homeostasis","6/61",0.0124064647694712,"Asph/Atp2a3/Trpc3/Atp2c1/Tspoap1/Grid2ip",6
+"GO:0014742","positive regulation of muscle hypertrophy","3/61",0.0124064647694712,"Ptk2/Trpc3/Pde9a",3
+"GO:0046834","lipid phosphorylation","2/61",0.0160994738505392,"Dgkz/Dgkh",2
+"GO:0099562","maintenance of postsynaptic density structure","2/61",0.0160994738505392,"Dgkz/Shank1",2
+"GO:0007215","glutamate receptor signaling pathway","3/61",0.0184820825495715,"Gria2/Grik1/Grid2ip",3
+"GO:0097106","postsynaptic density organization","3/61",0.01910798985273,"Dgkz/Grid2/Shank1",3
+"GO:0060013","righting reflex","2/61",0.0191331300623748,"Auts2/Shank1",2
+"GO:0098815","modulation of excitatory postsynaptic potential","3/61",0.0205396981313752,"Grik1/Baiap2/Shank1",3
+"GO:0007264","small GTPase-mediated signal transduction","6/61",0.0205396981313752,"Auts2/Dgkz/Baiap2/Ksr2/Elmo1/Rhobtb2",6
+"GO:1905274","regulation of modification of postsynaptic actin cytoskeleton","2/61",0.0221548979670543,"Ptk2/Baiap2",2
+"GO:0006816","calcium ion transport","6/61",0.0246813898963502,"Asph/Atp2a3/Trpc3/Tspan13/Atp2c1/Cacna1g",6
+"GO:0099084","postsynaptic specialization organization","3/61",0.0246813898963502,"Dgkz/Grid2/Shank1",3
+"GO:0030032","lamellipodium assembly","3/61",0.0246813898963502,"Auts2/Srgap2/Ablim2",3
+"GO:0099173","postsynapse organization","5/61",0.0246813898963502,"Dgkz/Baiap2/Grid2/Shank1/Elmo1",5
+"GO:0050805","negative regulation of synaptic transmission","3/61",0.0250617471426962,"Grik1/Grid2/Grid2ip",3
+"GO:0010524","positive regulation of calcium ion transport into cytosol","2/61",0.0250617471426962,"Asph/Trpc3",2
+"GO:0098880","maintenance of postsynaptic specialization structure","2/61",0.0270732790217743,"Dgkz/Shank1",2
+"GO:0010611","regulation of cardiac muscle hypertrophy","3/61",0.0289438573564133,"Ptk2/Trpc3/Pde9a",3
+"GO:0014743","regulation of muscle hypertrophy","3/61",0.0309480174776277,"Ptk2/Trpc3/Pde9a",3
+"GO:0010522","regulation of calcium ion transport into cytosol","2/61",0.0331799391515862,"Asph/Trpc3",2
+"GO:0051963","regulation of synapse assembly","4/61",0.0340030074541552,"Ptk2/Grid2/Srgap2/Elmo1",4
+"GO:0097581","lamellipodium organization","3/61",0.0340030074541552,"Auts2/Srgap2/Ablim2",3
+"GO:0006654","phosphatidic acid biosynthetic process","2/61",0.0340030074541552,"Dgkz/Dgkh",2
+"GO:0045956","positive regulation of calcium ion-dependent exocytosis","2/61",0.0340030074541552,"Syt7/Cacna1g",2
+"GO:0071625","vocalization behavior","2/61",0.0340030074541552,"Auts2/Shank1",2
+"GO:0001764","neuron migration","4/61",0.0347316248305118,"Auts2/Ptk2/Srgap2/Astn2",4
+"GO:0099159","regulation of modification of postsynaptic structure","2/61",0.0379766159812718,"Ptk2/Baiap2",2
+"GO:0050807","regulation of synapse organization","5/61",0.0403985268478236,"Ptk2/Baiap2/Grid2/Srgap2/Elmo1",5
+"GO:0098885","modification of postsynaptic actin cytoskeleton","2/61",0.0419039903167097,"Ptk2/Baiap2",2
+"GO:0050803","regulation of synapse structure or activity","5/61",0.0419039903167097,"Ptk2/Baiap2/Grid2/Srgap2/Elmo1",5
+"GO:0035235","ionotropic glutamate receptor signaling pathway","2/61",0.0448832488517977,"Gria2/Grik1",2
+"GO:0046473","phosphatidic acid metabolic process","2/61",0.0448832488517977,"Dgkz/Dgkh",2
+"GO:0043502","regulation of muscle adaptation","3/61",0.0476660315562595,"Ptk2/Trpc3/Pde9a",3
+"GO:0060004","reflex","2/61",0.0477710957283499,"Auts2/Shank1",2
+"GO:1905244","regulation of modification of synaptic structure","2/61",0.0477710957283499,"Ptk2/Baiap2",2

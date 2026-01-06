@@ -1,0 +1,40 @@
+"ID","Description","GeneRatio","adjPval","geneID","Count"
+"GO:0099003","vesicle-mediated transport in synapse","6/32",0.000929804057850425,"Pfn2/Calm3/Ap2m1/Sncb/Atp6v1g1/Cltb",6
+"GO:0032272","negative regulation of protein polymerization","4/32",0.000929804057850425,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:0140238","presynaptic endocytosis","4/32",0.000929804057850425,"Calm3/Ap2m1/Sncb/Cltb",4
+"GO:0099504","synaptic vesicle cycle","5/32",0.00205774499528782,"Pfn2/Ap2m1/Sncb/Atp6v1g1/Cltb",5
+"GO:0031333","negative regulation of protein-containing complex assembly","4/32",0.00575768067505858,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:0051494","negative regulation of cytoskeleton organization","4/32",0.00575768067505858,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:1902904","negative regulation of supramolecular fiber organization","4/32",0.00575768067505858,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:0032271","regulation of protein polymerization","4/32",0.00913392018203748,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:0048488","synaptic vesicle endocytosis","3/32",0.0104654114181945,"Ap2m1/Sncb/Cltb",3
+"GO:0031115","negative regulation of microtubule polymerization","2/32",0.0104654114181945,"Tubb4a/Stmn2",2
+"GO:0010976","positive regulation of neuron projection development","4/32",0.0104654114181945,"Ptn/Tubb2b/Marcks/Stmn2",4
+"GO:0043254","regulation of protein-containing complex assembly","5/32",0.0104654114181945,"Pfn2/Tpm1/Tubb4a/Stmn2/Ppp2ca",5
+"GO:0031346","positive regulation of cell projection organization","5/32",0.0104654114181945,"Ptn/Tubb2b/Marcks/Stmn2/Islr2",5
+"GO:0036465","synaptic vesicle recycling","3/32",0.011446428128505,"Ap2m1/Sncb/Cltb",3
+"GO:0051258","protein polymerization","4/32",0.0180409314269914,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:0098885","modification of postsynaptic actin cytoskeleton","2/32",0.0221611342956916,"Pfn2/Marcks",2
+"GO:0035330","regulation of hippo signaling","2/32",0.0365520712564382,"Ywhae/Ppp2ca",2
+"GO:0099072","regulation of postsynaptic membrane neurotransmitter receptor levels","3/32",0.0365520712564382,"Ap2m1/Neto2/Ywhae",3
+"GO:0050807","regulation of synapse organization","4/32",0.0365520712564382,"Ptn/Crmp1/Marcks/Nectin1",4
+"GO:0010639","negative regulation of organelle organization","4/32",0.0365520712564382,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:0050803","regulation of synapse structure or activity","4/32",0.0365520712564382,"Ptn/Crmp1/Marcks/Nectin1",4
+"GO:0051017","actin filament bundle assembly","3/32",0.0365520712564382,"Pfn2/Tpm1/Marcks",3
+"GO:1902903","regulation of supramolecular fiber organization","4/32",0.0365520712564382,"Pfn2/Tpm1/Tubb4a/Stmn2",4
+"GO:0061572","actin filament bundle organization","3/32",0.0365520712564382,"Pfn2/Tpm1/Marcks",3
+"GO:0032535","regulation of cellular component size","4/32",0.0365520712564382,"Pfn2/Ap2m1/Tpm1/Islr2",4
+"GO:1902905","positive regulation of supramolecular fiber organization","3/32",0.0394862474320918,"Pfn2/Tpm1/Stmn2",3
+"GO:0099010","modification of postsynaptic structure","2/32",0.0398907080391359,"Pfn2/Marcks",2
+"GO:0072583","clathrin-dependent endocytosis","2/32",0.041788810330213,"Ap2m1/Cltb",2
+"GO:0051495","positive regulation of cytoskeleton organization","3/32",0.0422280107320399,"Pfn2/Tpm1/Stmn2",3
+"GO:0031111","negative regulation of microtubule polymerization or depolymerization","2/32",0.0422280107320399,"Tubb4a/Stmn2",2
+"GO:0035329","hippo signaling","2/32",0.044176044032727,"Ywhae/Ppp2ca",2
+"GO:0099563","modification of synaptic structure","2/32",0.044176044032727,"Pfn2/Marcks",2
+"GO:1903170","negative regulation of calcium ion transmembrane transport","2/32",0.044176044032727,"Calm3/Ywhae",2
+"GO:0031345","negative regulation of cell projection organization","3/32",0.044176044032727,"Pfn2/Crmp1/Stmn2",3
+"GO:0007015","actin filament organization","4/32",0.044176044032727,"Pfn2/Tpm1/Marcksl1/Marcks",4
+"GO:0031113","regulation of microtubule polymerization","2/32",0.044176044032727,"Tubb4a/Stmn2",2
+"GO:0051496","positive regulation of stress fiber assembly","2/32",0.044176044032727,"Pfn2/Tpm1",2
+"GO:0031529","ruffle organization","2/32",0.045994581540659,"Pfn2/Tpm1",2
+"GO:1905475","regulation of protein localization to membrane","3/32",0.0461384915122096,"Ptn/Ap2m1/Neto2",3

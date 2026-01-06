@@ -1,0 +1,115 @@
+{
+    "7931-DTA_IO_control_1_filtered_bcs": 11185,
+    "7931-DTA_IO_control_1_frac_reads_kept": 0.8828633857442231,
+    "7931-DTA_IO_control_1_introns_included": null,
+    "7931-DTA_IO_control_1_pre_normalization_cmb_reads_per_filtered_bc": 36844.73902548056,
+    "7931-DTA_IO_control_1_pre_normalization_feature_reads": 412108406,
+    "7931-DTA_IO_control_1_pre_normalization_feature_reads_per_filtered_bc": 36844.73902548056,
+    "7931-DTA_IO_control_1_pre_normalization_raw_reads_per_filtered_bc": 38939.41654000894,
+    "7931-DTA_IO_control_1_pre_normalization_targeted_cmb_reads_per_filtered_bc": 36737.7783638802,
+    "7932-DTA_IO_control_2_filtered_bcs": 10219,
+    "7932-DTA_IO_control_2_frac_reads_kept": 0.7790428770881076,
+    "7932-DTA_IO_control_2_introns_included": null,
+    "7932-DTA_IO_control_2_pre_normalization_cmb_reads_per_filtered_bc": 41774.535570995205,
+    "7932-DTA_IO_control_2_pre_normalization_feature_reads": 426893979,
+    "7932-DTA_IO_control_2_pre_normalization_feature_reads_per_filtered_bc": 41774.535570995205,
+    "7932-DTA_IO_control_2_pre_normalization_raw_reads_per_filtered_bc": 44239.85536745279,
+    "7932-DTA_IO_control_2_pre_normalization_targeted_cmb_reads_per_filtered_bc": 41633.702514923185,
+    "7933-DTA_IO_dta_1_filtered_bcs": 12218,
+    "7933-DTA_IO_dta_1_frac_reads_kept": 0.8714528795284834,
+    "7933-DTA_IO_dta_1_introns_included": null,
+    "7933-DTA_IO_dta_1_pre_normalization_cmb_reads_per_filtered_bc": 37343.693321329185,
+    "7933-DTA_IO_dta_1_pre_normalization_feature_reads": 456265245,
+    "7933-DTA_IO_dta_1_pre_normalization_feature_reads_per_filtered_bc": 37343.693321329185,
+    "7933-DTA_IO_dta_1_pre_normalization_raw_reads_per_filtered_bc": 39444.619004747095,
+    "7933-DTA_IO_dta_1_pre_normalization_targeted_cmb_reads_per_filtered_bc": 37218.81027991488,
+    "7934-DTA_IO_dta_2_filtered_bcs": 10510,
+    "7934-DTA_IO_dta_2_frac_reads_kept": 1.0,
+    "7934-DTA_IO_dta_2_introns_included": null,
+    "7934-DTA_IO_dta_2_pre_normalization_cmb_reads_per_filtered_bc": 32542.192959086584,
+    "7934-DTA_IO_dta_2_pre_normalization_feature_reads": 342018448,
+    "7934-DTA_IO_dta_2_pre_normalization_feature_reads_per_filtered_bc": 32542.192959086584,
+    "7934-DTA_IO_dta_2_pre_normalization_raw_reads_per_filtered_bc": 34353.978116079925,
+    "7934-DTA_IO_dta_2_pre_normalization_targeted_cmb_reads_per_filtered_bc": 32434.439391056138,
+    "batches": [
+        "7931-DTA_IO_control_1",
+        "7932-DTA_IO_control_2",
+        "7933-DTA_IO_dta_1",
+        "7934-DTA_IO_dta_2"
+    ],
+    "chemistry_barcode": [
+        {
+            "kind": "gel_bead",
+            "length": 16,
+            "offset": 0,
+            "read_type": "R1",
+            "whitelist": {
+                "name": "737K-fixed-rna-profiling"
+            }
+        },
+        {
+            "kind": "right_probe",
+            "length": 8,
+            "offset": 68,
+            "read_type": "R2",
+            "whitelist": {
+                "name": "probe-barcodes-fixed-rna-profiling"
+            }
+        }
+    ],
+    "chemistry_description": "Fixed RNA Profiling",
+    "chemistry_endedness": "three_prime",
+    "chemistry_name": "MFRP",
+    "chemistry_rna": {
+        "length": 50,
+        "min_length": 50,
+        "offset": 0,
+        "read_type": "R2"
+    },
+    "chemistry_rna2": null,
+    "chemistry_strandedness": "-",
+    "chemistry_umi": [
+        {
+            "length": 12,
+            "min_length": 10,
+            "offset": 16,
+            "read_type": "R1",
+            "whitelist": null
+        }
+    ],
+    "filtered_bcs_transcriptome_union": 44132,
+    "frac_reads_kept": [
+        0.8828633857442231,
+        0.7790428770881076,
+        0.8714528795284834,
+        1.0
+    ],
+    "lowest_frac_reads_kept": 0.7790428770881076,
+    "mm10_filtered_bcs": 44132,
+    "mm10_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": 0.7034198037503462,
+    "mm10_filtered_bcs_median_counts": 6546.0,
+    "mm10_filtered_bcs_median_unique_genes_detected": 3385.0,
+    "mm10_flt_mapped_reads": 1010143875,
+    "mm10_raw_mapped_reads": 1436046966,
+    "multi_filtered_bcs_conf_mapped_barcoded_reads_cum_frac": 0.7034198037503462,
+    "num_cells_by_library": [
+        11185,
+        10219,
+        12218,
+        10510
+    ],
+    "post_normalization_multi_transcriptome_total_feature_reads_per_filtered_bc": 32539.568657663374,
+    "post_normalization_multi_transcriptome_total_raw_reads_per_filtered_bc": 34391.33988942264,
+    "post_normalization_total_feature_reads": 1436036244,
+    "post_normalization_total_reads": 1517758612,
+    "pre_normalization_multi_transcriptome_total_feature_reads_per_filtered_bc": 37099.74798332276,
+    "pre_normalization_multi_transcriptome_total_raw_reads_per_filtered_bc": 39214.608923230306,
+    "pre_normalization_total_feature_reads": 1637286078,
+    "pre_normalization_total_reads": 1730619121,
+    "target_panel_gene_count": 19059,
+    "target_panel_hash": "e54e103948ed4ff4fb868dcc116a7abb0193308d",
+    "target_panel_name": "Chromium Mouse Transcriptome Probe Set v1.0.1",
+    "target_panel_path": "/opt/cellranger-7.1.0/probe_sets/Chromium_Mouse_Transcriptome_Probe_Set_v1.0.1_mm10-2020-A.csv",
+    "target_panel_type": "predesigned",
+    "targeting_method": "templated_ligation"
+}

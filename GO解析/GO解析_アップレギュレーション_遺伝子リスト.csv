@@ -1,0 +1,11 @@
+"Category","ID","Description","Gene_ENTREZID","Gene_Symbol","Count","p.adjust"
+"GO_Up","GO:0099003","vesicle-mediated transport in synapse","Pfn2; Calm3; Ap2m1; Sncb; Atp6v1g1; Cltb","Pfn2; Calm3; Ap2m1; Sncb; Atp6v1g1; Cltb",6,0.000929804057850425
+"GO_Up","GO:0032272","negative regulation of protein polymerization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.000929804057850425
+"GO_Up","GO:0140238","presynaptic endocytosis","Calm3; Ap2m1; Sncb; Cltb","Calm3; Ap2m1; Sncb; Cltb",4,0.000929804057850425
+"GO_Up","GO:0099504","synaptic vesicle cycle","Pfn2; Ap2m1; Sncb; Atp6v1g1; Cltb","Pfn2; Ap2m1; Sncb; Atp6v1g1; Cltb",5,0.00205774499528782
+"GO_Up","GO:0031333","negative regulation of protein-containing complex assembly","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00575768067505858
+"GO_Up","GO:0051494","negative regulation of cytoskeleton organization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00575768067505858
+"GO_Up","GO:1902904","negative regulation of supramolecular fiber organization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00575768067505858
+"GO_Up","GO:0032271","regulation of protein polymerization","Pfn2; Tpm1; Tubb4a; Stmn2","Pfn2; Tpm1; Tubb4a; Stmn2",4,0.00913392018203748
+"GO_Up","GO:0048488","synaptic vesicle endocytosis","Ap2m1; Sncb; Cltb","Ap2m1; Sncb; Cltb",3,0.0104654114181945
+"GO_Up","GO:0031115","negative regulation of microtubule polymerization","Tubb4a; Stmn2","Tubb4a; Stmn2",2,0.0104654114181945

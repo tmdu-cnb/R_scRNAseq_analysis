@@ -1,0 +1,11 @@
+"celltype","lit_count","ctl_count","lit_pct","ctl_pct","ratio_lit_vs_ctl"
+"Granule",477176,16230,77.71,61.74,1.26
+"Interneurons",45767,1880,7.45,7.15,1.04
+"Purkinje",16634,468,2.71,1.78,1.52
+"Bergmann_glia",17498,455,2.85,1.73,1.65
+"Astrocytes",16717,642,2.72,2.44,1.11
+"Oligodendrocytes",13363,365,2.18,1.39,1.57
+"OPC",2121,415,0.35,1.58,0.22
+"Endothelial",8413,341,1.37,1.3,1.05
+"Microglia",1576,174,0.26,0.66,0.39
+"Fibroblasts",5333,165,0.87,0.63,1.38
